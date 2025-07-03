@@ -1,0 +1,87 @@
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+
+    padding: 1.2em 0px;
+    background-color: var(--color-darkest);
+
+    z-index: 500;
+}
+
+#logo-button {
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 200ms ease-in;
+}
+#logo-button span{   
+    transition: 200ms ease-in;
+}
+#logo-button:hover span {
+    color: var(--color-highlight-darker) !important;
+}
+#logo-button:hover , #create-video-button:hover {
+    transform: scale(1.1);
+}
+
+#profile-button {
+    font-size: 1.7rem;
+    color: var(--color-light);
+    transition: 200ms ease-in;
+}
+#profile-button:hover {
+    color: var(--color-highlight);
+    transform: scale(1.1);
+}
+
+
+.nav-button {
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.center-container {
+  flex: .8; 
+  display: flex;
+  justify-content: center;
+}
+#search-bar {
+    width: 100%;
+    max-width: 800px;
+    height: 2.5em;
+    border-radius: 300px;
+    border: none;;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+#search-bar input {
+    width: 94%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--color-white);
+    opacity: 1;
+}
+#search-bar input::placeholder {
+  color: var(--color-white);
+  opacity: .25;
+}
+
+#create-video-button{
+    display: flex;
+    align-items: center;
+    color: var(--color-light);  
+    transition: 200ms ease-in;
+}
+#create-video-button:hover  {
+    color: var(--color-highlight) !important;
+}

@@ -1,0 +1,66 @@
+.landing-page-container {
+  text-align: center;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+.username-input {
+    display: flex;
+    gap: .8em;
+    margin: 2em 0 4em;
+}
+
+
+.landing-page-container input {
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    flex: 3;
+}
+.landing-page-container button {
+    border: none;
+    background-color: var(--color-highlight);
+    color: var(--color-dark);
+    flex: 1;
+}
+.landing-page-container button:hover {
+    background-color: var(--color-highlight-darker);
+}
+.input-field {
+    padding: .5em .7em;
+    font-size: 1.4em;
+
+}
+
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  /* mix-blend-mode:; */
+  opacity: .3;
+  filter: hue-rotate(-15deg) saturate(.7);
+
+}
+
+.landing-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 50%;
+  min-width: 400px;
+  margin: 12vh auto 0;
+  padding: 40px;
+}
+.landing-content p{
+    margin-bottom: 6em;
+}

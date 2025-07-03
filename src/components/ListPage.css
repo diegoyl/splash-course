@@ -1,0 +1,112 @@
+
+#video-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 3em;
+    padding: 0 1em;
+}
+.list-page-container {
+    padding: 2em;
+    margin: 0 auto;
+    width:100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.list-page-container h1 {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 0 1em;
+    line-height: 1.4em;
+}
+.listed-video {
+    display: flex;
+    height: 20vw;
+    min-width: 400px;
+    transition: 300ms ease-in-out;
+}
+.listed-video:hover {
+    cursor: pointer;
+    transform: scale(1.03)
+}
+
+.listed-video:hover h2, .listed-video:hover h3, .listed-video:hover h4{
+    color: var(--color-light);
+    /* opacity: .75; */
+}
+
+.info-panel {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.info-panel h2, .info-panel h3, .info-panel h4{
+    padding-left: 6%;
+    margin: .5em 0;
+    font-weight: normal;
+    transition: 300ms ease-in;
+}
+.info-panel h2{
+    margin-top: .6em;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.info-panel h3{
+    color: var(--color-light);
+    font-size: .9em;
+    margin-bottom: 1.4em;
+}
+
+.info-panel h4{
+    color: var(--color-white);
+    font-size: .9em;
+    /* flex: 1; */
+
+}
+
+
+.video-thumb {
+    background-color: var(--color-light);
+    border-radius: 8px;
+    aspect-ratio: 3/2;
+    height: 100%;
+    background-image: url("./thumbnail.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#vid-list-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    position: sticky;
+    top: 4em;
+    background-color: var(--color-dark);
+    z-index: 300;
+    padding: 2em 1em;
+}
+#vid-list-buttons button {
+    flex-grow: 1;
+    border-radius: var(--button-border-rad);
+    background-color: transparent;
+    outline: 3px solid var(--color-highlight);
+    color:  var(--color-highlight);
+}
+#vid-list-buttons button:hover {
+    background-color:  var(--color-highlight-darker);
+    color:  var(--color-dark);
+    outline: 3px solid var(--color-highlight-darker);
+}
+#vid-list-buttons .filter-btn{
+    background-color: var(--color-light);
+    flex: .2;
+    outline: 3px solid var(--color-light);
+    color: var(--color-dark);
+}
+#vid-list-buttons .active-vid-btn{
+    background-color: var(--color-highlight);
+    color: var(--color-dark);
+}
+
