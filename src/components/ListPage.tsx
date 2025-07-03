@@ -43,7 +43,7 @@ const ListPage: React.FC<ListPageProps> = ({ onSelectVideo, openDummyPopup, myUs
     
     // API STUFF
     try {
-      const response = await fetch(`/api/videos?user_id=${user_id}`);
+      const response = await fetch(`https://take-home-assessment-423502.uc.r.appspot.com/api/videos?user_id=${user_id}`);
       if (!response.ok) {
         throw new Error(`Oh noooo, error fecthing videos: ${response.status}`);
       }

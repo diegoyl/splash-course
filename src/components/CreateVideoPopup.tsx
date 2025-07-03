@@ -17,7 +17,7 @@ const CreateVideoPopup: React.FC<CreateVideoPopupProps> = ({ closeCreatePopup })
 
     // API STUFF
     try {
-      const response = await fetch("/api/videos", {
+      const response = await fetch("https://take-home-assessment-423502.uc.r.appspot.com/api/videos", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
