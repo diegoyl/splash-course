@@ -5,11 +5,13 @@ by Diego Yanez-Laguna
 [Check it out](https://splash-course.vercel.app/)
 <br></br>
 
+<em>*Had some issues trying to use Loom for the video walkthrough, but I tried to explain everything in here</em>
+
 ## OVERVIEW
 Splash Course is an EdTech site for watching, creating, and commenting on educational videos.
 I decided to make it ocean themed to give it some design direction.
 
-*Some Elements that were not part of the main functionalities were added for fleshing out the visual design
+<em>*Some Elements that were not part of the main functionalities were added for fleshing out the visual design</em>
 
 ### Layout
 I decided to have three main pages:
