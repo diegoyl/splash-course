@@ -16,9 +16,9 @@ const CommentSection: React.FC<CommentSectionProps> = ({ video_id, myUsername })
   useEffect(() => {
     const fetchComments = async () => {
       try {
-        const response = await fetch(`https://take-home-assessment-423502.uc.r.appspot.com/api/videos/comments?video_id=${video_id}`);
+        const response = await fetch(`/api/comments?video_id=${video_id}`);
         if (!response.ok) {
-          throw new Error(`Failed to fetch comments: ${response.status}`);
+          throw new Error(`Oh no, error while getting comments: ${response.status}`);
         }
 
         const data = await response.json();
@@ -66,14 +66,15 @@ const CommentSection: React.FC<CommentSectionProps> = ({ video_id, myUsername })
         "user_id": myUsername,
       };
 
-      const response = await fetch("https://take-home-assessment-423502.uc.r.appspot.com/api/videos/comments", {
+      const response = await fetch("/api/comments", {
         method: "POST",
-        headers: {"Content-Type": "application/json",},
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
-      if (!response.ok) {throw new Error(`Oh noooo, failed to post comment: ${response.status}`);}
-
+      if (!response.ok) {
+        throw new Error(`Oh noooo, failed to post comment: ${response.status}`);
+      }
     } catch (error) {console.error(error);}
   };
 
