@@ -3,6 +3,8 @@
 by Diego Yanez-Laguna
 
 [Check it out](https://splash-course.vercel.app/)
+
+<kbd>![ss-landing](https://github.com/user-attachments/assets/082e081a-c557-4b0e-9950-19ffc22d8d06)</kbd>
 <br></br>
 
 ## OVERVIEW
